@@ -82,7 +82,7 @@ def clean_price(price):
     price_str = "".join(filter(str.isdigit, str(price)))  # Remove non-numeric characters
     return float(price_str) if price_str else np.nan  # Convert or return NaN if empty
 
-text("# Dyanmic Price Vs Battery Comparison for Phone Models")
+text("# Dynamic Price Vs Battery Comparison for Phone Models")
 
 selected_battery_capacity = slider("Select Battery Capacity",min_val=2000, max_val=10000, default=3000)
 # Ensure Battery Capacity and Prices are numeric and handle missing values
